@@ -112,4 +112,17 @@ The backend was implemented using **Express** framework and **Prisma** to create
 | beach       | Varchar(255) | The beach where the event will take place |
 | dateCreated | Datetime     | Event registration date                   |
 
+##Endpoints 📌
+
+
+|Metodo HTTP| Endpoint | Request | Response |
+|---|---|---|---|
+|[ GET ]| `localhost:3000/v1/volunteers/` | `localhost:3000/v1/volunteers` | Obtain all volunteers registred |
+|[ GET ]| `localhost:3000/v1/volunteers/:id` | `localhost:3000/v1/volunteers/1` | Obtain a volunteer by id |
+|[ GET ]| `localhost:3000/v1/volunteers/:beach` | `localhost:3000/v1/volunters/cozumel` | Obtain volunteers by beach |
+|[ POST ]| `localhost:3000/v1/volunteers/` | `localhost:3000/v1/volunteers` | Create a new volunteer |
+|[ PUT ]| `localhost:3000/v1/volunteers/:id` | `localhost:3000/v1/volunteers/1` | Update a volunteer |
+|[ DELETE ]| `localhost:3000/v1/volunteers/:id` | `localhost:3000/v1/volunteers/1` | Delete a volunteer |
+
+
 ## Team's Members 🙋‍♂️
