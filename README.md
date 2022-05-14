@@ -1,6 +1,21 @@
 # HackTheOcean
 Proyecto para Hackaton Launch X 2022
 
+## Installation.
+
+**Compiles and hot-reloads for development**
+
+`npm install`
+
+**Create .env file with the URL**
+
+``
+DATABASE_URL="postgresql://username:PASSWORD@localhost:5432/database_name?schema=public"
+``
+
+**Lints and fixes files**
+
+`npm run lint`
 
 # Backend Documentation.
 
