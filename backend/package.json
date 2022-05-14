@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/EslebanPerez/HackTheOcean/issues"
   },
-  "homepage": "https://github.com/EslebanPerez/HackTheOcean#readme"
+  "homepage": "https://github.com/EslebanPerez/HackTheOcean#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
