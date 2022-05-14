@@ -73,6 +73,8 @@ volunteerList --> getAllvolunteer
 
 The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
 
+**End Points Events**
+
 | Endpoint | Request | Response |
 |---|---|---|
 | `localhost:3000/v1/events` | `localhost:3000/v1/events` | Lista de los eventos disponibles |
