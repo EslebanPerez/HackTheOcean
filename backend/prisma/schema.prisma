@@ -25,12 +25,12 @@ model Volunteer {
   avFriday Boolean @default(false)
   avSaturday Boolean @default(false)
   avSunday Boolean @default(false)
-  eventIdMonday Int
-  eventIdTuesday Int
-  eventIdWednesday Int
-  eventIdThursday Int
-  eventIdFriday Int
-  eventIdSaturday Int
-  eventIdSunday Int
+  eventIdMonday Int @default(0)
+  eventIdTuesday Int @default(0)
+  eventIdWednesday Int @default(0)
+  eventIdThursday Int @default(0)
+  eventIdFriday Int @default(0)
+  eventIdSaturday Int @default(0)
+  eventIdSunday Int @default(0)
   beaches String @db.VarChar(255)
 }
