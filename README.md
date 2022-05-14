@@ -112,8 +112,7 @@ The backend was implemented using **Express** framework and **Prisma** to create
 | beach       | Varchar(255) | The beach where the event will take place |
 | dateCreated | Datetime     | Event registration date                   |
 
-##Endpoints 📌
-
+## Endpoints 📌
 
 |Metodo HTTP| Endpoint | Request | Response |
 |---|---|---|---|
