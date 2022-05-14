@@ -2,6 +2,10 @@
 Proyecto para Hackaton Launch X 2022
 
 
+# Backend Documentation.
+
+The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
+
 ## Data dictionary.
 
 **Volunteers Table**
