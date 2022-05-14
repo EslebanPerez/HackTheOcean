@@ -1,0 +1,23 @@
+{
+  "name": "hack-the-ocean-backend",
+  "version": "1.0.0",
+  "description": "API using Express and prisma to interact with a PostgreSQL db",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EslebanPerez/HackTheOcean.git"
+  },
+  "keywords": [
+    "Hackathon",
+    "HackTheOcean"
+  ],
+  "author": "EslebanPerez,JonathanJRodriguez,gambii007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EslebanPerez/HackTheOcean/issues"
+  },
+  "homepage": "https://github.com/EslebanPerez/HackTheOcean#readme"
+}
