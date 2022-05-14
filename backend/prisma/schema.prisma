@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Volunteer {
+  volunteerId Int @id @default(autoincrement())
+  firstName String @unique
+  lastName String @db.VarChar(255)
+  email String @db.VarChar(255)
+  age Int
+  city String @db.VarChar(255)
+  dateCreated DateTime @default(now())
+  avMonday Boolean @default(false)
+  avTuesday Boolean @default(false)
+  avWednesday Boolean @default(false)
+  avThursday Boolean @default(false)
+  avFriday Boolean @default(false)
+  avSaturday Boolean @default(false)
+  avSunday Boolean @default(false)
+  eventIdMonday Int @default(0)
+  eventIdTuesday Int @default(0)
+  eventIdWednesday Int @default(0)
+  eventIdThursday Int @default(0)
+  eventIdFriday Int @default(0)
+  eventIdSaturday Int @default(0)
+  eventIdSunday Int @default(0)
+  beaches String @db.VarChar(255)
+}

@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE "Volunteer" ALTER COLUMN "eventIdMonday" SET DEFAULT 0,
+ALTER COLUMN "eventIdTuesday" SET DEFAULT 0,
+ALTER COLUMN "eventIdWednesday" SET DEFAULT 0,
+ALTER COLUMN "eventIdThursday" SET DEFAULT 0,
+ALTER COLUMN "eventIdFriday" SET DEFAULT 0,
+ALTER COLUMN "eventIdSaturday" SET DEFAULT 0,
+ALTER COLUMN "eventIdSunday" SET DEFAULT 0;

@@ -1,10 +1,26 @@
 # HackTheOcean 🌊
 
+
 Proyecto para Hackatón Launch X 2022
+=======
 
 ## Problem definition 💡
 
 ## Instalation 🛠
+
+**Compiles and hot-reloads for development**
+
+`npm install`
+
+**Create .env file with the URL**
+
+``
+DATABASE_URL="postgresql://username:PASSWORD@localhost:5432/database_name?schema=public"
+``
+
+**Lints and fixes files**
+
+`npm run lint`
 
 ## Dependencies 📦
 
@@ -53,6 +69,9 @@ volunteer --> updatevolunteer
 
 volunteerList --> getAllvolunteer
 ```
+# Backend Documentation.
+
+The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
 
 ## Data dictionary 📕
 
