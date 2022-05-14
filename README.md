@@ -73,6 +73,15 @@ volunteerList --> getAllvolunteer
 
 The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
 
+| Endpoint | Request | Response |
+|---|---|---|
+| `localhost:3000/v1/events` | `localhost:3000/v1/events` | Lista de los eventos disponibles |
+| `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/eventId` | Lista de todos los Eventos por ID |
+| `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/events` | Añadir Nuevo Evento |
+| `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/eventId` | Actualizar Evento por ID |
+| `localhost:3000/v1/events/date/:date` | `localhost:3000/v1/events/date/eventDate` | Lista de Eventos por fecha |
+| `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/eventId` | Eliminar un Evento |
+
 ## Data dictionary 📕
 
 **Volunteers Table**
