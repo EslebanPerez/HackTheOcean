@@ -75,14 +75,14 @@ The backend was implemented using **Express** framework and **Prisma** to create
 
 **End Points Events**
 
-| Endpoint | Request | Response |
-|---|---|---|
-| `localhost:3000/v1/events` | `localhost:3000/v1/events` | Lista de los eventos disponibles |
-| `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/eventId` | Lista de todos los Eventos por ID |
-| `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/events` | Añadir Nuevo Evento |
-| `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/eventId` | Actualizar Evento por ID |
-| `localhost:3000/v1/events/date/:date` | `localhost:3000/v1/events/date/eventDate` | Lista de Eventos por fecha |
-| `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/eventId` | Eliminar un Evento |
+| HTPP | Endpoint | Request | Response |
+|---|---|---|---|
+| GET | `localhost:3000/v1/events` | `localhost:3000/v1/events` | Events list |
+| GET | `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/2205141` | Event list by ID |
+| GET | `localhost:3000/v1/events/date/:date` | `localhost:3000/v1/events/date/220514` | Event list by Date |
+| PUT | `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/2205141` | Update Event by ID |
+| POST | `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/2205142` | Add new Event |
+| DELETE | `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/2205141` | Delete Event |
 
 ## Data dictionary 📕
 
