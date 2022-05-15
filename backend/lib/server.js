@@ -23,6 +23,11 @@ app.get("/v1/volunteer/:volunteerId", async (req,res) => {
     const volunteer = await volunteerService.getVolunteerById(id);
     res.json(volunteer);
 });
+app.get("/v1/volunteer/beach/:beach", async (req,res) => {
+    const beach = req.params.beach;
+    const volunteers = await volunteerService.getVolunteerByBeach(beach);
+    res.json(volunteers);
+});
 app.listen(port, () => {
     console.log(`Listening to requests on port ${port}`);
 });
