@@ -28,6 +28,28 @@ app.get("/v1/volunteer/beach/:beach", async (req,res) => {
     const volunteers = await volunteerService.getVolunteerByBeach(beach);
     res.json(volunteers);
 });
+
+app.post("/v1/volunteer/", async (req, res) => {
+    const data = { 
+        firstName : req.body.firstName,
+        lastName : req.body.lastName,
+        email : req.body.email,
+        age : req.body.age,
+        city : req.body.city,
+        avMonday:  req.body.avMonday,
+        avTuesday: req.body.avTuesday,
+        avWednesday: req.body.avWednesday,
+        avThursday: req.body.avThursday,
+        avFriday: req.body.avFriday,
+        avSaturday: req.body.avSaturday,
+        avSunday: req.body.avSunday,
+        beaches : req.body.beaches
+    };
+    await volunteerService.createVolunteer(data);
+    return res.json({message: "Volunteer created"});
+});
+
+
 app.listen(port, () => {
     console.log(`Listening to requests on port ${port}`);
 });
