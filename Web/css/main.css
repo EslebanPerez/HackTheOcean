@@ -1,15 +1,26 @@
-*{
-    box-sizing: border-box;
+:root {
+    --colorTextos: black;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    padding: 0;
+*,
+::before,
+::after {
     margin: 0;
-    line-height: 1.5;
-
-    background-color: white;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 /*
 nav
@@ -144,17 +155,37 @@ header
 header{
     background-color: green;
     padding: 1rem .5rem;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
 }
 /*
+Main
+*/
+main{
+    padding-top: 39rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.Top{
+    padding-top: 140rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+h1{
+    text-size-adjust: 24px;
+}
+h2{
+    text-align: center;
+}
+/*
 footer
 */
 .footer {
-    position: absolute;
+    margin-top: auto;
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -163,14 +194,15 @@ footer
   }
   
   .footer__big {
-    padding-top: 4rem;
-    margin: 6rem auto 2rem;
+    padding-top: 1px;
+    margin: 1rem auto 1rem;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
   }
   
   .footer__text h2 {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     color: white;
   }
@@ -184,7 +216,7 @@ footer
   
   .footer__links {
     list-style: none;
-    margin: 10px 20px 10px 10px;
+    margin: 10px 20px 10px 20px;
     font-size: 0.9rem;
     display: grid;
     grid-auto-flow: row;
@@ -216,11 +248,27 @@ footer
     header{
         background-color: green;
         padding: 1rem .5rem;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         left: 0;
         top: 0;
         width: 100%;
+    }
+    .Top{
+        padding-top: auto;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .Top{
+        padding-top: 160rem;
+        padding-bottom: 2rem;
+    }
+    p{
+        text-overflow: clip;
+        text-align: justify;
     }
 }
 @media screen and (max-width: 736px) {
@@ -238,10 +286,79 @@ footer
         header{
             background-color: green;
             padding: 1rem .5rem;
-            position: fixed;
+            position: absolute;
             z-index: 1;
             left: 0;
              top: 0;
             width: 100%;
         }
+        .Top{
+            padding-top: 155rem;
+            padding-bottom: 2rem;
+            width: 110%;
+        }
+        p{
+            text-overflow: clip;
+            text-align: justify;
+        }
+}
+@media screen and (max-width:700px) {
+    .Top{
+        padding-top: 156rem;
+        padding-bottom: 2rem;
+        width: 120%;
+    }
+    p{
+        text-overflow: clip;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 677px) {
+    nav{
+        width: 100%;
+        padding: 0;
+    }
+    nav ul {
+        display: none;
+    }
+
+    nav .mobile{
+        display: block;
+    }
+    header{
+        background-color: green;
+        padding: 1rem .5rem;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+         top: 0;
+        width: 100%;
+    }
+    .Top{
+        padding-top: 157rem;
+        padding-bottom: 2rem;
+        width: 125%;
+    }
+    p{
+        text-overflow: clip;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .Top{
+        padding-top: 176rem;
+        padding-bottom: 2rem;
+        width: 120%;
+    }
+    p{
+        text-overflow: clip;
+        text-align: justify;
+    }
+    main{
+        padding-top: 47rem;
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
