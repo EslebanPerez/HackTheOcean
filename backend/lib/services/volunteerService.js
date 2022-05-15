@@ -29,6 +29,13 @@ class VolunteerService{
             data: data,
         });
     }
+    static async deleteVolunteer(id){
+        await prisma.volunteer.delete({
+            where: {
+                volunteerId: id
+            }
+        });
+    }
 }
 
 module.exports = VolunteerService;
