@@ -1,29 +1,4 @@
 /* Estilos para el formulario */
-:root {
-    --colorTextos: black;
-}
-
-*,
-::before,
-::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body { 
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #806AB3, #4568DC);
-    background-size: cover;
-    background-position: center;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
-    min-height: 100vh;
-}
-
 h1 {
     text-align: center;
     font-weight: 700;
@@ -52,8 +27,8 @@ input {
     color: #c6c6c6;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
+    display: inline;
+    width: auto;
     border: none;
     border-bottom: 1px solid var(--colorTextos);
 }
@@ -66,8 +41,8 @@ input:focus {
 label {
     color: var(--colorTextos);
     font-size: 16px;
-    position: absolute;
-    left: 5px;
+    position: sticky;
+    left: 0px;
     top: 10px;
     transition: 0.5s ease all;
     pointer-events: none;
@@ -75,9 +50,10 @@ label {
 
 input:focus~label,
 input:valid~label {
-    top: -14px;
-    font-size: 12px;
-    color: #2196f3;
+    top: 0px;
+    font-size: 14px;
+    color: #041c30;
+    
 }
 
 .barra::before {
@@ -112,7 +88,7 @@ input:focus~.barra::before {
     cursor: pointer;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:736px) {
     form {
         width: 80%;
     }

@@ -1,3 +1,27 @@
+:root {
+    --colorTextos: black;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
 /*
 nav
 */
@@ -138,7 +162,7 @@ header{
     width: 100%;
 }
 main{
-    padding-top: 25rem;
+    padding-top: 39rem;
     padding-bottom: 2rem;
 }
 /*
