@@ -21,6 +21,14 @@ class VolunteerService{
     static async createVolunteer(data){
         await prisma.volunteer.create({data: data});
     }
+    static async updateVolunteerById(id, data) {
+        await prisma.volunteer.update({
+            where: {
+                volunteerId: id,
+            },
+            data: data,
+        });
+    }
 }
 
 module.exports = VolunteerService;
