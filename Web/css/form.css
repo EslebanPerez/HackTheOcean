@@ -1,0 +1,95 @@
+/* Estilos para el formulario */
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+form {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: white;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 20px;
+}
+
+input {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: inline;
+    width: auto;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: #5e5d5d;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: sticky;
+    left: 0px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: 0px;
+    font-size: 14px;
+    color: #041c30;
+    
+}
+
+.barra::before {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    transition: 0.3S ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+.Sbutton {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:736px) {
+    form {
+        width: 80%;
+    }
+}
