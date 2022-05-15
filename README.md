@@ -82,7 +82,7 @@ graph TD;
 A[(Database)] -->|prisma|
 B(Events Service)
 B --> C(Events Controller)
-C --> D[Server
+C --> D[Server]
 ```
 
 ```mermaid
