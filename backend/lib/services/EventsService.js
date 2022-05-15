@@ -27,7 +27,7 @@ class EventsService {
   static async updateEventsById(id, data) {
     const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     data["eventDay"] = days[data.eventDate.getDay()];
-    await prisma.events.update({
+    return await prisma.events.update({
       where: {
         eventId: id,
       },
