@@ -10,6 +10,14 @@ class VolunteerService{
         const volunteer = await prisma.volunteer.findUnique({where: {volunteerId: id}});
         return volunteer;
     }
+    static async getVolunteerByBeach(beach){
+        const volunteer = await prisma.volunteer.findMany({
+            where: {
+                beaches : beach
+            }
+        });
+        return volunteer;
+    }
 }
 
 module.exports = VolunteerService;
