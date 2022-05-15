@@ -132,6 +132,10 @@ VolunteerService : +deleteVolunteer(id)
 | POST | `localhost:3000/v1/events/:eventId` | `localhost:3000/v1/events/2205142` | Add new Event |
 | DELETE | `localhost:3000/v1/events/:eventId` | `localhost:3000/v1/events/2205141` | Delete Event |
 
+**Download Postman file with endpoints here**
+[HackTheOcean API.postman_collection.zip](https://github.com/JonathanJRodriguez/HackTheOcean/files/8696084/HackTheOcean.API.postman_collection.zip)
+
+
 ## Data dictionary 📕
 
 **Volunteers Table**
