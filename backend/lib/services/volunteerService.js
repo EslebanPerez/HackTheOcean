@@ -18,6 +18,9 @@ class VolunteerService{
         });
         return volunteer;
     }
+    static async createVolunteer(data){
+        await prisma.volunteer.create({data: data});
+    }
 }
 
 module.exports = VolunteerService;
