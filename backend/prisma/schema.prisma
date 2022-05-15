@@ -37,7 +37,7 @@ model Volunteer {
 
 model Events {
   eventId Int @id @default(autoincrement())
-  eventDate DateTime
+  eventDate DateTime @unique
   eventDay String @db.VarChar(255)
   beach String @db.VarChar(255)
   dateCreated DateTime @default(now())
