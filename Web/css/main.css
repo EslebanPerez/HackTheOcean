@@ -161,9 +161,25 @@ header{
     top: 0;
     width: 100%;
 }
+/*
+Main
+*/
 main{
     padding-top: 39rem;
     padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.Top{
+    padding-top: 140rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+h1{
+    text-size-adjust: 24px;
+}
+h2{
+    text-align: center;
 }
 /*
 footer
