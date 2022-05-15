@@ -44,6 +44,26 @@ const prisma = new PrismaClient();
         });
 
         const event2 = await prisma.events.upsert({
+            where: { beach: "Chuburna" },
+            update: {},
+            create: {
+                eventDate: new Date("2022-05-25"),
+                eventDay: "Wednesday",
+                beach: "Chuburna"
+            },
+        });
+
+        const event3 = await prisma.events.upsert({
+            where: { beach: "Progreso" },
+            update: {},
+            create: {
+                eventDate: new Date("2022-05-25"),
+                eventDay: "Wednesday",
+                beach: "Progreso"
+            },
+        });
+
+        const event4 = await prisma.events.upsert({
             where: { beach: "Zihuatanejo" },
             update: {},
             create: {
