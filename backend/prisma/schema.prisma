@@ -34,3 +34,11 @@ model Volunteer {
   eventIdSunday Int @default(0)
   beaches String @db.VarChar(255)
 }
+
+model Events {
+  eventId Int @id @default(autoincrement())
+  eventDate DateTime
+  eventDay String @db.VarChar(255)
+  beach String @unique
+  dateCreated DateTime @default(now())
+}

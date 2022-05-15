@@ -73,6 +73,28 @@ volunteerList --> getAllvolunteer
 
 The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
 
+## Diagrams 📕
+
+**Event Flow Chart**
+
+```mermaid
+graph TD;
+A[(Database)] -->|prisma| B(Events Service)
+B --> C[Server]
+```
+
+```mermaid
+classDiagram
+class EventsService
+EventsService : +getAllEvents()
+EventsService : +getEventsById(id)
+EventsService : +getEventsByDate(date)
+EventsService : +getAmountPeopleInEvents(id)
+EventsService : +updateEventsByID(data)
+EventsService : +addNewEvents(event)
+EventsService : +deleteEvents(id)
+```
+
 ## Data dictionary 📕
 
 **Volunteers Table**
@@ -111,5 +133,30 @@ The backend was implemented using **Express** framework and **Prisma** to create
 | eventDay    | Varchar(255) | Weekday of the event (Monday to Sunday)   |
 | beach       | Varchar(255) | The beach where the event will take place |
 | dateCreated | Datetime     | Event registration date                   |
+
+## Endpoints 📌
+
+**Endpoints Volunteers**
+
+| Method HTTP | Endpoint | Request | Response |
+|---|---|---|---|
+| GET  | `localhost:3000/v1/volunteers/` | `localhost:3000/v1/volunteers` | Obtain all volunteers registred |
+| GET | `localhost:3000/v1/volunteers/:volunteerId` | `localhost:3000/v1/volunteers/1` | Obtain a volunteer by id |
+| GET | `localhost:3000/v1/volunteers/:beach` | `localhost:3000/v1/volunters/cozumel` | Obtain volunteers by beach |
+| POST | `localhost:3000/v1/volunteers/` | `localhost:3000/v1/volunteers` | Create a new volunteer |
+| PUT | `localhost:3000/v1/volunteers/:volunteerId` | `localhost:3000/v1/volunteers/1` | Update a volunteer |
+| DELETE | `localhost:3000/v1/volunteers/:volunteerId` | `localhost:3000/v1/volunteers/1` | Delete a volunteer |
+
+**Endpoints Events**
+
+| Method HTPP | Endpoint | Request | Response |
+|---|---|---|---|
+| GET | `localhost:3000/v1/events` | `localhost:3000/v1/events` | Events list |
+| GET | `localhost:3000/v1/events/:eventId` | ` localhost:3000/v1/events/2205141` | Event list by ID |
+| GET | `localhost:3000/v1/events/date/:date` | `localhost:3000/v1/events/date/220514` | Event list by Date |
+| PUT | `localhost:3000/v1/events/:eventId` | ` localhost:3000/v1/events/2205141` | Update Event by ID |
+| POST | `localhost:3000/v1/events/:eventId` | `localhost:3000/v1/events/2205142` | Add new Event |
+| DELETE | `localhost:3000/v1/events/:eventId` | `localhost:3000/v1/events/2205141` | Delete Event |
+
 
 ## Team's Members 🙋‍♂️
