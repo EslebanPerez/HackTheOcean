@@ -80,8 +80,7 @@ The backend was implemented using **Express** framework and **Prisma** to create
 ```mermaid
 graph TD;
 A[(Database)] -->|prisma| B(Events Service)
-B --> C(Events Controller)
-C --> D[Server]
+B --> C[Server]
 ```
 
 ```mermaid
@@ -94,18 +93,6 @@ EventsService : +getAmountPeopleInEvents(id)
 EventsService : +updateEventsByID(data)
 EventsService : +addNewEvents(event)
 EventsService : +deleteEvents(id)
-```
-
-```mermaid
-classDiagram
-class EventsControler
-EventsControler : +getAllEvents(events)
-EventsControler : +getEventsById(events, id)
-EventsControler : +getEventsByDate(events, date)
-EventsControler : +getAmountPeopleInEvents(events, id)
-EventsControler : +updateEventsByID(events, id)
-EventsControler : +addNewEvents(events)
-EventsControler : +deletEvents(events, id)
 ```
 
 ## Data dictionary 📕
