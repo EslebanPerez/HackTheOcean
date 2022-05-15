@@ -37,7 +37,6 @@ app.get("/v1/events/:eventId", async (req, res) => {
 app.post("/v1/events/", async (req, res) => {
   const events = {
     eventDate: new Date(req.body.eventDate),
-    eventDay: req.body.eventDay,
     beach: req.body.beach,
   };
   EventsService.addNewEvents(events);
