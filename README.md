@@ -96,6 +96,18 @@ EventsService : +addNewEvents(event)
 EventsService : +deleteEvents(id)
 ```
 
+```mermaid
+classDiagram
+class EventsControler
+EventsControler : +getAllEvents(events)
+EventsControler : +getEventsById(events, id)
+EventsControler : +getEventsByDate(events, date)
+EventsControler : +getAmountPeopleInEvents(events, id)
+EventsControler : +updateEventsByID(events, id)
+EventsControler : +addNewEvents(events)
+EventsControler : +deletEvents(events, id)
+```
+
 ## Data dictionary 📕
 
 **Volunteers Table**
