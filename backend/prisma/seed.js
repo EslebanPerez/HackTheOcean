@@ -33,6 +33,26 @@ const prisma = new PrismaClient();
             },
         });
 
+        const event1 = await prisma.events.upsert({
+            where: { beach: "Caletilla" },
+            update: {},
+            create: {
+                eventDate: new Date("2022-05-29"),
+                eventDay: "Sunday",
+                beach: "Caletilla"
+            },
+        });
+
+        const event2 = await prisma.events.upsert({
+            where: { beach: "Zihuatanejo" },
+            update: {},
+            create: {
+                eventDate: new Date("2022-05-25"),
+                eventDay: "Wednesday",
+                beach: "Zihuatanejo"
+            },
+        });
+
         console.log("Create db seed succesfully");
     } catch(e) {
         console.error(e);
