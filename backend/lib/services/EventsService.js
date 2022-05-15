@@ -14,7 +14,9 @@ class EventsService {
   }
 
   static async addNewEvents(event) {
-    await prisma.events.create({ data: event });
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    event["eventDay"] = days[event.eventDate.getDay()];
+    return await prisma.events.create({ data: event });
   }
 
   static async deleteEvents(id) {
@@ -25,7 +27,7 @@ class EventsService {
   static async updateEventsById(id, data) {
     const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     data["eventDay"] = days[data.eventDate.getDay()];
-    await prisma.events.update({
+    return await prisma.events.update({
       where: {
         eventId: id,
       },
