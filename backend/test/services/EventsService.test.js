@@ -24,7 +24,7 @@ describe("Unit tests for EventsService", () => {
     expect(result.beach).toBe(newEvent.beach);
 
     const updateEvent = await EventsService.updateEventsById(result.eventId,data);
-    expect(updateEvent.beach).toBe("Playa4");
+    expect(updateEvent.beach).toBe(data.beach);
 
     const deleteResult = await EventsService.deleteEvents(result.eventId);
     const testEvent = await EventsService.getEventsById(result.eventId);
