@@ -48,8 +48,26 @@ app.post("/v1/volunteer/", async (req, res) => {
     await volunteerService.createVolunteer(data);
     return res.json({message: "Volunteer created"});
 });
-
-
+app.put("/v1/volunteer/:volunteerId", async (req, res) => {
+    const id = parseInt(req.params.volunteerId);
+    const data = {
+        firstName : req.body.firstName,
+        lastName : req.body.lastName,
+        email : req.body.email,
+        age : req.body.age,
+        city : req.body.city,
+        avMonday:  req.body.avMonday,
+        avTuesday: req.body.avTuesday,
+        avWednesday: req.body.avWednesday,
+        avThursday: req.body.avThursday,
+        avFriday: req.body.avFriday,
+        avSaturday: req.body.avSaturday,
+        avSunday: req.body.avSunday,
+        beaches : req.body.beaches
+    };
+    await volunteerService.updateVolunteerById(id,data);
+    return res.json({message: "Actualizado"});
+});
 app.listen(port, () => {
     console.log(`Listening to requests on port ${port}`);
 });
