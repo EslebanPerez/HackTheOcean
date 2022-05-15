@@ -174,7 +174,7 @@ VolunteerService : +deleteVolunteer(id)
 # Screenshots 
 
 
-## Team's Members 🙋‍♂️
+## Team Members 🙋‍♂️
 
 [@EslebanPerez](https://github.com/EslebanPerez)
 
