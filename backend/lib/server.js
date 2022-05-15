@@ -36,6 +36,16 @@ app.delete("/v1/events/:eventId", async (req, res) => {
   return res.json({message: "Suprimido"})
 })
 
+app.put("/v1/events/:eventId", async (req, res) => {
+  const id = parseInt(req.params.eventId);
+  const data = {
+    eventDate:  new Date(req.body.eventDate),
+    beach: req.body.beach
+  }
+  await EventsService.updateEventsById(id,data)
+  return res.json({message: "Actualizado"})
+})
+
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
