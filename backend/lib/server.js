@@ -68,6 +68,11 @@ app.put("/v1/volunteer/:volunteerId", async (req, res) => {
     await volunteerService.updateVolunteerById(id,data);
     return res.json({message: "Actualizado"});
 });
+app.delete("/v1/volunteer/:volunteerId", async (req, res) => {
+    const id = parseInt(req.params.volunteerId);
+    await volunteerService.deleteVolunteer(id);
+    return res.json({message: " Volunteer deleted"});
+});
 app.listen(port, () => {
     console.log(`Listening to requests on port ${port}`);
 });
