@@ -112,4 +112,18 @@ The backend was implemented using **Express** framework and **Prisma** to create
 | beach       | Varchar(255) | The beach where the event will take place |
 | dateCreated | Datetime     | Event registration date                   |
 
+
+
+**End Points Events**
+
+| HTPP | Endpoint | Request | Response |
+|---|---|---|---|
+| GET | `localhost:3000/v1/events` | `localhost:3000/v1/events` | Events list |
+| GET | `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/2205141` | Event list by ID |
+| GET | `localhost:3000/v1/events/date/:date` | `localhost:3000/v1/events/date/220514` | Event list by Date |
+| PUT | `localhost:3000/v1/events/:eventid` | ` localhost:3000/v1/events/2205141` | Update Event by ID |
+| POST | `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/2205142` | Add new Event |
+| DELETE | `localhost:3000/v1/events/:eventid` | `localhost:3000/v1/events/2205141` | Delete Event |
+
+
 ## Team's Members 🙋‍♂️
