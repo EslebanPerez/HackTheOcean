@@ -73,6 +73,41 @@ volunteerList --> getAllvolunteer
 
 The backend was implemented using **Express** framework and **Prisma** to create and interact with a database in **PostgreSQL**
 
+## Diagrams 📕
+
+**Event Flow Chart**
+
+```mermaid
+graph TD;
+A[(Database)] -->|prisma| B(Events Service)
+B --> C(Events Controller)
+C --> D[Server]
+```
+
+```mermaid
+classDiagram
+class EventsService
+EventsService : +getAllEvents()
+EventsService : +getEventsById(id)
+EventsService : +getEventsByDate(date)
+EventsService : +getAmountPeopleInEvents(id)
+EventsService : +updateEventsByID(data)
+EventsService : +addNewEvents(event)
+EventsService : +deleteEvents(id)
+```
+
+```mermaid
+classDiagram
+class EventsControler
+EventsControler : +getAllEvents(events)
+EventsControler : +getEventsById(events, id)
+EventsControler : +getEventsByDate(events, date)
+EventsControler : +getAmountPeopleInEvents(events, id)
+EventsControler : +updateEventsByID(events, id)
+EventsControler : +addNewEvents(events)
+EventsControler : +deletEvents(events, id)
+```
+
 ## Data dictionary 📕
 
 **Volunteers Table**
