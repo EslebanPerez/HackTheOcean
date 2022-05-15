@@ -28,11 +28,13 @@
 * _Formas de recompensa digital a los voluntariados._ 💸
 * _Suscripcion de organismos expertos en cuidado del ambiente._ 🏤 
 * _Integracion con redes sociales._ 📲 
+* _Control de eventos de limpieza de playas._ 🏝
 
 ## **HERRAMIENTAS A UTILIZAR** 💻 
 * _PostgreSQL -> Para almacenar los voluntarios, informacion de los sitios para limpieza, informacion de organizaciones expertas._
 * _Pagina de consulta con la informacion de forma sencilla (Frontend), usando HTML, CSS & JAVASCRIPT._
 * _Uso de Backend para recibir la informacion de los voluntarios (Express)._
+* _Uso de Azure para hospedar la base de datos de PostgreSQL._
 
 ## **DESCRIPCION DE LA PROPUESTA** 📗 
 _La funcion principal de la plataforma sera concentrar voluntarios con la intencion de realizar tareas de limpieza en playas, se agruparar por zonas en comun los cuales seran invitados a realizar la limpieza una fecha programada._
