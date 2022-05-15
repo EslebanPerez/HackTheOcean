@@ -79,8 +79,7 @@ The backend was implemented using **Express** framework and **Prisma** to create
 
 ```mermaid
 graph TD;
-A[(Database)] -->|prisma|
-B(Events Service)
+A[(Database)] -->|prisma| B(Events Service)
 B --> C(Events Controller)
 C --> D[Server]
 ```
