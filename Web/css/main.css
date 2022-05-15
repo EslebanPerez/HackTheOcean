@@ -355,4 +355,10 @@ footer
         text-overflow: clip;
         text-align: justify;
     }
+    main{
+        padding-top: 47rem;
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
