@@ -1,7 +1,5 @@
-# HackTheOcean 🌊
-
-
 <span align="center">
+<h1>HackTheOcean 🌊</h1>
 
 ![logo](/Web/assets/Logo.png)
 
@@ -23,31 +21,31 @@
 
 
 ## **ELEMENTOS ESCALABLES** 
-* _Zonas Geograficas._  🌎 
+* _Zonas Geográficas._  🌎 
 * _Actividades de voluntariado._ 👷
 * _Formas de recompensa digital a los voluntariados._ 💸
-* _Suscripcion de organismos expertos en cuidado del ambiente._ 🏤 
-* _Integracion con redes sociales._ 📲 
+* _Suscripción de organismos expertos en cuidado del ambiente._ 🏤 
+* _Integración con redes sociales._ 📲 
 * _Control de eventos de limpieza de playas._ 🏝
 
 ## **HERRAMIENTAS A UTILIZAR** 💻 
-* _PostgreSQL -> Para almacenar los voluntarios, informacion de los sitios para limpieza, informacion de organizaciones expertas._
-* _Pagina de consulta con la informacion de forma sencilla (Frontend), usando HTML, CSS & JAVASCRIPT._
-* _Uso de Backend para recibir la informacion de los voluntarios (Express)._
+* _PostgreSQL -> Para almacenar los voluntarios, información de los sitios para limpieza, información de organizaciones expertas._
+* _Pagina de consulta con la información de forma sencilla (Frontend), usando HTML, CSS & JAVASCRIPT._
+* _Uso de Backend para recibir la información de los voluntarios (Express)._
 * _Uso de Azure para hospedar la base de datos de PostgreSQL._
 
-## **DESCRIPCION DE LA PROPUESTA** 📗 
-_La funcion principal de la plataforma sera concentrar voluntarios con la intencion de realizar tareas de limpieza en playas, se agruparar por zonas en comun los cuales seran invitados a realizar la limpieza una fecha programada._
+## **DESCRIPCIÓN DE LA PROPUESTA** 📗 
+_La función principal de la plataforma será concentrar voluntarios con la intención de realizar tareas de limpieza en playas, se agruparan por zonas en común los cuales serán invitados a realizar la limpieza una fecha programada._
 
 _Es necesario que la parte administradora se encargue de definir los lugares en donde llegaran los voluntarios y agendar un servicio de colecta de basura._
 
-_Se requerira la informacion necesaria a los voluntarios y por medio de un correo electronico se les notificara y se les requerira su confirmacion, conforme a la aceptacion de las personas y voluntariados se ampliaran los sitios de limpieza asi como las actividades con la intencion de generar participacion de organizaciones y organizmos especializados para poder brindar alguna recompensa a nuestros voluntarios._
+_Se requerirá la información necesaria a los voluntarios y por medio de un correo electronico se les notificará y se les requerirá su confirmacion, conforme a la aceptación de las personas y voluntariados se ampliaran los sitios de limpieza así como las actividades con la intención de generar participación de organizaciones y organizmos especializados para poder brindar alguna recompensa a nuestros voluntarios._
 
 
 =======
 # Technical Documentation 📖
 
-## Installation 🛠
+## Instalación 🛠
 
 **Compiles and hot-reloads for development**
 
@@ -63,7 +61,7 @@ DATABASE_URL="postgresql://username:PASSWORD@localhost:5432/database_name?schema
 
 `npm run lint`
 
-## Dependencies 📦
+## Dependencias 📦
 
 * Jest - For Unit Testing
 * Prisma - To interact with a PostgreSQL database
