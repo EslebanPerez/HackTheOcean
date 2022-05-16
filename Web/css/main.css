@@ -11,15 +11,16 @@
 }
 body { 
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #806AB3, #4568DC);
-    background-size: cover;
-    background-position: center;
+    
+    background-color: rgba(0, 60, 255, 0.468);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3em;
     min-height: 100vh;
 }
 /*
@@ -165,13 +166,16 @@ header{
 Main
 */
 main{
-    padding-top: 39rem;
+    background-image: url(../assets/bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 45rem;
     padding-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
 }
 .Top{
-    padding-top: 140rem;
+    padding-top: 160rem;
     padding-bottom: 2rem;
     text-align: center;
 }
