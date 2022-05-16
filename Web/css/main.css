@@ -101,7 +101,7 @@ nav .mobile {
 }
 
 nav .mobile .header {
-    background-color: green;
+    background-color: rgb(21, 86, 133);
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -129,7 +129,7 @@ nav .mobile .links {
     position: relative;
     z-index: 200;
 
-    background-color: green;
+    background-color: rgb(21, 86, 133);
 }
 nav .mobile .links a {
     font-size: 20px;
@@ -154,7 +154,7 @@ header
 */
 
 header{
-    background-color: green;
+    background-color: rgb(21, 86, 133);
     padding: 1rem .5rem;
     position: absolute;
     z-index: 1;
@@ -171,8 +171,8 @@ main{
     background-repeat: no-repeat;
     padding-top: 45rem;
     padding-bottom: 2rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
 }
 .Top{
     padding-top: 160rem;
@@ -250,7 +250,7 @@ footer
         display: flex;
     }
     header{
-        background-color: green;
+        background-color: rgb(21, 86, 133);
         padding: 1rem .5rem;
         position: absolute;
         z-index: 1;
@@ -288,7 +288,7 @@ footer
             display: block;
         }
         header{
-            background-color: green;
+            background-color: rgb(21, 86, 133);
             padding: 1rem .5rem;
             position: absolute;
             z-index: 1;
@@ -330,7 +330,7 @@ footer
         display: block;
     }
     header{
-        background-color: green;
+        background-color: rgb(21, 86, 133);
         padding: 1rem .5rem;
         position: absolute;
         z-index: 1;
