@@ -3,14 +3,14 @@ const app = express();
 const cors = require("cors");
 
 app.use(
-    express.urlencoded({
-        extended: true,
-    })
+  express.urlencoded({
+    extended: true,
+  })
 );
 app.use(
-    express.json({
-        type: "*/*",
-    })
+  express.json({
+    type: "*/*",
+  })
 );
 
 app.use(cors());
@@ -43,15 +43,15 @@ app.post("/v1/volunteer/", async (req, res) => {
         firstName : req.body.firstName,
         lastName : req.body.lastName,
         email : req.body.email,
-        age : req.body.age,
+        age : parseInt(req.body.age),
         city : req.body.city,
-        avMonday:  req.body.avMonday,
-        avTuesday: req.body.avTuesday,
-        avWednesday: req.body.avWednesday,
-        avThursday: req.body.avThursday,
-        avFriday: req.body.avFriday,
-        avSaturday: req.body.avSaturday,
-        avSunday: req.body.avSunday,
+        avMonday:  Boolean(req.body.avMonday),
+        avTuesday: Boolean(req.body.avTuesday),
+        avWednesday: Boolean(req.body.avWednesday),
+        avThursday: Boolean(req.body.avThursday),
+        avFriday: Boolean(req.body.avFriday),
+        avSaturday: Boolean(req.body.avSaturday),
+        avSunday: Boolean(req.body.avSunday),
         beaches : req.body.beaches
     };
     await volunteerService.createVolunteer(data);

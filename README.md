@@ -176,6 +176,9 @@ VolunteerService : +deleteVolunteer(id)
 | dateCreated | Datetime     | Event registration date                   |
 
 # Screenshots 
+**Volunteer Form**
+
+![image](https://user-images.githubusercontent.com/99201962/168501780-3a9c8459-36e9-4329-8ac3-4cd89ba401fd.png)
 
 **PostgreSQL database in Azure**
 
@@ -188,6 +191,10 @@ VolunteerService : +deleteVolunteer(id)
 **Events information entered via HTML methods and Postman**
 
 ![image](https://user-images.githubusercontent.com/99201962/168500623-e3035257-bd3e-4ff5-a953-5827e7cbdf6d.png)
+
+**Using endpoints in Browser**
+
+![GIF_2022_05_15_19_29_50](https://user-images.githubusercontent.com/99201962/168501492-694bf2ef-bf09-4921-9d4d-9bb135949633.gif)
 
 
 ## Team Members 🙋‍♂️
