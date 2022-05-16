@@ -85,39 +85,39 @@ app.delete("/v1/volunteer/:volunteerId", async (req, res) => {
 
 
 app.get("/v1/events", async (req, res) => {
-  const event = await EventsService.getAll();
-  res.json(event);
+    const event = await EventsService.getAll();
+    res.json(event);
 });
 
 app.get("/v1/events/:eventId", async (req, res) => {
-  const id = parseInt(req.params.eventId);
-  const event = await EventsService.getEventsById(id);
-  res.json(event);
+    const id = parseInt(req.params.eventId);
+    const event = await EventsService.getEventsById(id);
+    res.json(event);
 });
 
 app.post("/v1/events/", async (req, res) => {
-  const events = {
-    eventDate: new Date(req.body.eventDate),
-    beach: req.body.beach,
-  };
-  EventsService.addNewEvents(events);
-  return res.json({ message: "Create" });
+    const events = {
+        eventDate: new Date(req.body.eventDate),
+        beach: req.body.beach,
+    };
+    EventsService.addNewEvents(events);
+    return res.json({ message: "Create" });
 });
 
 app.delete("/v1/events/:eventId", async (req, res) => {
-  const id = parseInt(req.params.eventId);
-  await EventsService.deleteEvents(id);
-  return res.json({ message: "Suprimido" });
+    const id = parseInt(req.params.eventId);
+    await EventsService.deleteEvents(id);
+    return res.json({ message: "Suprimido" });
 });
 
 app.put("/v1/events/:eventId", async (req, res) => {
-  const id = parseInt(req.params.eventId);
-  const data = {
-    eventDate: new Date(req.body.eventDate),
-    beach: req.body.beach,
-  };
-  await EventsService.updateEventsById(id, data);
-  return res.json({ message: "Actualizado" });
+    const id = parseInt(req.params.eventId);
+    const data = {
+        eventDate: new Date(req.body.eventDate),
+        beach: req.body.beach,
+    };
+    await EventsService.updateEventsById(id, data);
+    return res.json({ message: "Actualizado" });
 });
 
 app.listen(port, () => {
