@@ -7,7 +7,7 @@ h1 {
 form {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: white;
-    padding: 40px 0;
+    padding: 40px 20px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }

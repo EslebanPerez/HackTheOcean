@@ -24,6 +24,7 @@
   "homepage": "https://github.com/EslebanPerez/HackTheOcean#readme",
   "dependencies": {
     "@prisma/client": "^3.14.0",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "prisma": "^3.14.0"
   },
