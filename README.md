@@ -176,6 +176,17 @@ VolunteerService : +deleteVolunteer(id)
 | dateCreated | Datetime     | Event registration date                   |
 
 # Screenshots 
+
+**LandingPage** (color differs)
+
+![GIF_2022_05_15_19_47_34](https://user-images.githubusercontent.com/99201962/168502708-74e866e9-d54e-4088-8908-9037921d08db.gif)
+
+
+**Form Access** (color differs)
+
+![GIF_2022_05_15_19_48_25](https://user-images.githubusercontent.com/99201962/168502723-c32b4402-1461-43d6-9d32-238c097c9eb1.gif)
+
+
 **Volunteer Form**
 
 ![image](https://user-images.githubusercontent.com/99201962/168501780-3a9c8459-36e9-4329-8ac3-4cd89ba401fd.png)
